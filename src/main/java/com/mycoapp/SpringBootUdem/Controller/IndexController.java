@@ -11,15 +11,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 
-@Controller // Maneja las peticiones que el Usuario ha solicitado, los métodos siempre son públicos
-@RequestMapping("/app") // Mapea el Controlador, reflejando esas solicitudes
+@Controller // Anotacion que Maneja las peticiones que el Usuario ha solicitado, los métodos siempre son públicos
+@RequestMapping("/app") // URL a mapear por el Controlador, reflejando esas solicitudes
 public class IndexController {
 
     @GetMapping(value = {"/index", "/", "/home", ""})
