@@ -41,8 +41,8 @@ public class EstudianteController {
 
         //Con los metodos de la Clase Model pasamos los atributos del objeto a la vista
         model.addAttribute("estudiante", estudiante);
-        model.addAttribute("titulo", "Perfil de EstudianteEntity ".concat(estudiante.getNombre().concat(" ").concat(estudiante.getApellido())));
-        model.addAttribute("", "Perfil de EstudianteEntity ".concat(estudiante.getEscuela()));
+        model.addAttribute("titulo", "Perfil del Estudiante: ".concat(estudiante.getNombre().concat(" ").concat(estudiante.getApellido())));
+        model.addAttribute("Escuela", "Perfil del Estudiante: ".concat(estudiante.getEscuela()));
 
         return "perfil_estudiante";
     }
